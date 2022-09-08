@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+.nav-head {
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: black;
+  cursor: pointer;
+}
+input[type="date"]::before {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  content: attr(placeholder);
+}
+input[type="date"] {
+  color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+  color: #000;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  content: "" !important;
+}
+.ribbon {
+  position: relative;
+  padding: -1 0.5em;
+  font-size: 25px;
+  margin: 0 0 0 -0.725em;
+  color: #e6e2c8;
+  border-radius: 0 0.156em 0.256em 0;
+  background: rgb(142, 51, 233);
+  box-shadow: -1px 2px 3px rgb(90, 6, 173);
+  width: 160px;
+  height: 40px;
+}
+
+.ribbon:before,
+.ribbon:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.ribbon:before {
+  width: 0.469em;
+  height: 100%;
+  padding: 0 0 0.438em;
+  top: -10;
+  left: -0.469em;
+  background: inherit;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon:after {
+  width: 0.313em;
+  height: 0.313em;
+  background: rgb(90, 6, 173);
+  bottom: -0.313em;
+  left: -0.313em;
+  border-radius: 0.113em 0 0 0.213em;
+  box-shadow: inset -1px 2px 2px rgb(90, 6, 173);
+}
